@@ -3,6 +3,8 @@ import { useState } from 'react'
 
 export function WholePageLmao(){
 
+  //THESE TARGET THE INPUTS TO CONSTATNLY GRAB WHAT IS IN THE BOX
+
   const [personal, setPersonal] = useState({
     firstName: 'Dan',
     lastName: 'Steely',
@@ -85,6 +87,9 @@ export function WholePageLmao(){
     })
   }
 
+  //THESE ARE WHAT SETS THE SUBMIT BUTTON TO RETURN FINAL INPUT
+
+
   const [PersonalFinal, setPersonalFinal] = useState({
     finalFName: personal.firstName,
     finalLName: personal.lastName,
@@ -131,10 +136,13 @@ export function WholePageLmao(){
     })
   }
 
+  //THIS IS THE ENTIRE WEBPAGE
+
 
   return(
-    <div className="page">
-      <div className="top">
+
+      <div className="allPage">
+        <div className="personalInput">
         First Name:
         <input
         id='firstName' 
@@ -164,7 +172,7 @@ export function WholePageLmao(){
 
       <br></br>
 
-      <div className="education">
+      <div className="educationInput">
         School Name:
         <input
         id='schoolName'
@@ -188,7 +196,7 @@ export function WholePageLmao(){
 
       <br></br>
 
-      <div className="work">
+      <div className="workInput">
         Former Company Name:
         <input
         id='companyName'
@@ -213,20 +221,16 @@ export function WholePageLmao(){
       <br></br>
 
       <div className="actualCV">
-      <div className="personal">
+      <div className="personalPage">
           <div className="namePage">{PersonalFinal.finalFName} {PersonalFinal.finalLName}</div>
           <div className="phonePage">{PersonalFinal.finalEMail}</div>
           <div className="emailPage">{PersonalFinal.finalPhone}</div>
         </div>
-        <div className="education">
-          <div className="institutionPage">{EducationFinal.finalSchoolName}</div>
-          <div className="gradPage">{EducationFinal.finalYearsAttend}</div>
-          <div className="degreePage">{EducationFinal.finalDegree}</div>
+        <div className="educationPage">
+          Graduated from {EducationFinal.finalSchoolName}, studying for a degree in {EducationFinal.finalDegree} between the years {EducationFinal.finalYearsAttend}
         </div>
-        <div className="work">
-          <div className="jobPage">{WorkFinal.finalCompanyName}</div>
-          <div className="positionPage">{WorkFinal.finalWorkPos}</div>
-          <div className="yearsPage">{WorkFinal.finaltimeWorked}</div>
+        <div className="workPage">
+          Worked at {WorkFinal.finalCompanyName} as a {WorkFinal.finalWorkPos}, quitting on {WorkFinal.finalWorkPos}
         </div>
       </div>
     </div>

@@ -1,3 +1,1 @@
-I did know something I didn't, but it wasn't that
-
-Currently broken and trying to mend; please stop looking in here.
+This is my first React project, so please be gentle.  Might add a section to add more job experiences in the future, but maybe not idk.

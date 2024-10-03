@@ -1,14 +1,31 @@
-.personal{
-    display: flex;
-    justify-content: space-evenly
+.actualCV{
+    background-color: lightgray;
+    border: 5px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: double;
 }
 
-.education{
+.personalPage{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
-.work{
-    display: flex;
-    justify-content: space-evenly
+.educationPage{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.workPage{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
